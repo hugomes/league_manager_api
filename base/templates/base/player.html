@@ -1,0 +1,21 @@
+<style>
+    .player-profile{
+        display: grid;
+        grid-template-columns: 3fr 1fr
+    }
+</style>
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="player-profile">
+    <div>
+        {%include 'base/player_detail.html'%}
+    </div>
+    
+    <div>
+        {%include 'base/team_detail.html'%}
+    </div>
+</div>
+
+{% endblock content %}

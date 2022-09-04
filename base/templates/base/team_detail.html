@@ -1,0 +1,4 @@
+<h3>{{player.team.name}}</h3>
+{% for player in team_players %}
+    <h5>{{player.name}} joined {{player.created|timesince}} ago</h5>
+{% endfor %}
